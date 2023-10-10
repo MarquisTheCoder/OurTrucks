@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <header th:fragment="Header" class="flex flex-col p-0 m-0 scrollbar-none">
+    
+    <section
+      id="navigationContainer"
+      class="flex flex-col min-w-screen min-h-screen relative p-0 m-0 scrollbar-none"
+      role="navigationContainer"
+    >
+    <!-- <img th:src="@{/img/semi-truck-image.jpg}" alt="background-image" class="absolute top-0 left-0 z-0"> -->
+
+    <div class="w-[100vw] h-[100vh] overflow-hidden absolute top-0 left-0 z-1">
+      <video  autoplay muted loop poster="cake.jpg" class="min-w-[300vw] md:min-w-[220vw]
+      lg:min-w-[120vw] md:min-h-fit absolute top-0 left-0">
+
+        <source th:src="@{/img/peaceful_vroom.mp4}" type="video/mp4">
+       </video>
+    </div>
+   
+
+     <!-- <div class="w-[100vw] h-screen overflow-hidden absolute top-0 left-0 z-0 p-0 m-0 ">  
+      <div class="w-full h-full relative overflow-hidden">
+          <div class="stripe bg-gradient-to-r from-green-500/50 to-[#8DC146] w-[35rem] h-[300vh] min-h-[120vh] transform -skew-y-12 m-0 p-0  absolute top-0 right-0">
+          </div>
+      </div> -->
+      
+    </div>
+      <nav th:fragment="Navigation" class="border-gray-200 z-10 pt-10 pb-10 px-10 md:px-20 bg-gradient-to-b from-[#547d1933] to-black/0 w-[100vw]">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
+          <a href="https://www.able-log.net" class="flex items-center">
+            <img th:src="(@{img/assets/Ourtrucks.png})" alt="OurTrucks" class="w-72  md:w-[20rem]" />
+          </a>
+       
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            id="navToggle"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
+          <div class="hidden w-full h-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium text-2xl flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700"
+            >
+              <!-- <li th:classappend="${#httpServletRequest.getRequestURI() == '/' ? 'active':''}"> -->
+                <a
+                  th:href="@{/}"
+                 
+                  class="block py-2 pl-3 pr-4 text-[#558216] font-sans font-thin decoration-lime-600 underline"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+
+              <li>
+                <a
+                  th:href="@{/about}" 
+                  class="block py-2 pl-3 pr-4 text-[#558216] font-sans font-thin"
+                  >About</a>
+              </li>
+
+              <li>
+                <a
+                  th:href="@{/services}"
+                  class="block py-2 pl-3 pr-4 text-[#558216] font-sans font-thin"
+                  >Services</a>
+              </li>
+
+              <li>
+                <a
+                  th:href="@{/contact}"
+                  class="block py-2 pl-3 pr-4 text-[#558216] font-sans font-thin"
+                  >Contact</a
+                >
+              </li>
+              <li class="flex flex-row gap-4">
+                <div>
+                  <a href="/login" class="bg-gradient-to-br from-[#567626] to-[#36510E] text-[#c8e1a6] font-bold py-2 px-8 rounded-full md:text-[1.2rem] shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] hover:px-10 hover:py-4 transition-all ease-in-out">Sign up</a>
+                </div>
+                <div>
+                  <a href="/contact" class="border-[1px] border-[rgba(87,116,48,0.73)] text-[#446516bb] font-bold py-2 px-8 rounded-full md:text-[1.2rem] shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] hover:px-10 hover:py-4 transition-all ease-in-out">Login</a>
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>
+      </nav>
+
+      <div class="grow flex flex-col justify-center items-center gap-20 relative">
+       
+        <div class="flex flex-col gap-10 ">
+          <h1 class="text-4xl text-white bg-gradient-to-b from-[#74AD2415] to-transparent font-bold max-w-md mdz; px-8 md:text-7xl text-center md:max-w-5xl pt-2">
+            Reliable, <span class="text-[#558216]">Efficient</span>, And Productive <i>Web Solutions
+            </i>
+          </h1>
+          <div class="min-w-full flex flex-row justify-center">
+            <p class="font-thin w-[80vw] md:w-[55rem] text-center text-2xl px-8 bg-gradient-to-t from-[#74AD2435]  to-transparent">Welcome to OurTrucks &copy;,  your all-in-one solution for trucking companies to effortlessly launch their own websites and enhance online visibility. Our intuitive platform lets you create a customized website quickly, even if you're not tech-savvy, while our expert SEO guidance boosts your search engine rankings. Plus, stay tuned for our upcoming free CRM management feature, designed to streamline your customer relationships. Join us at OurTrucks &copy; to drive your trucking business to success in the digital age.</p>
+          </div>
+          <div class="min-w-full flex flex-row gap-4 md:gap-10 justify-center">
+            <div>
+              <a href="/contact" class="border-[1px] border-[rgba(149,228,39,0.73)] text-[#A4E44Abb] font-bold py-2 px-8 rounded-full md:text-2xl shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] hover:px-10 hover:py-4 transition-all ease-in-out">CONTACT US</a>
+            </div>
+            <div>
+              <!-- #36510E -->
+              <a href="/about" class="bg-gradient-to-br from-[#567626] to-[#36510E] text-[#c8e1a6] font-bold py-2 px-8 rounded-full md:text-2xl shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] hover:px-10 hover:py-4 transition-all ease-in-out">DISCOVER MORE</a>
+            </div>           
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+</html>

@@ -1,0 +1,7 @@
+<body th:fragment="Body">
+  <section id="main-wrapper" class="main-wrapper w-100 h-[100vw]" role="main-wrapper">
+    <header th:replace="(~{aboutFragments/AboutHeader :: Header})"></header>
+    <main th:replace="(~{aboutFragments/AboutMain :: Main })"></main>
+    <footer th:replace="(~{baseFragments/Footer :: Footer})"></footer>
+  </section>
+</body>

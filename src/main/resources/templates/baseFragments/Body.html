@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <body th:fragment="Body" class="bg-[#eef5e3] text-white p-0 m-0 no-scrollbar">
+    <section id="main-wrapper" class="main-wrapper overflow-x-hidden m-0 p-0 no-scrollbar scrollbar-none" role="main-wrapper">
+      <header th:replace="(~{baseFragments/Header :: Header})"></header>
+      <main th:replace="(~{baseFragments/Main :: Main})"></main>
+    </section>
+  </body>
+  <style>
+    body{
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    .no-scrollbar::-webkit-scrollbar { 
+            display: none; 
+        } 
+  </style>
+</html>

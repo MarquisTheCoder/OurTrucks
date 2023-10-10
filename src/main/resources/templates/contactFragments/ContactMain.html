@@ -1,0 +1,33 @@
+<div th:fragment="Main">
+  <div class="w-full flex flex-row justify-center mb-10">
+    <h1 class="text-4xl font-bold">Contact Us</h1>
+  </div>
+  <div class="mt-10 w-full flex flex-row justify-center">
+    <form
+      action="https://getform.io/f/5931279e-8133-4dbf-a323-d86d2feaf8dd"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <div class="flex flex-col w-64 gap-10 white">
+        <label for="name" class="text-center font-bold">Name</label>
+        <input type="text" name="name" class="grow-0 text-black" />
+
+        <label for="email" class="text-center mt-4 font-bold">Email</label>
+        <input type="email" name="email" class="text-black" />
+
+        <label for="message" class="text-center mt-4 font-bold">Message</label>
+        <input type="text" name="message" class="text-black" />
+
+        <label for="phone" class="text-center mt-4 font-bold">Phone Number</label>
+        <input type="tel" name="phone" class="text-black" />
+
+        <input type="hidden" name="_gotcha" style="display: none !important" />
+
+        <label for="files[]" class="text-center mt-4 font-bold">Document</label>
+        <input type="file" name="files[]" multiple />
+
+        <button class="mt-4 px-5 py-2 bg-blue-700 text-white" type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
