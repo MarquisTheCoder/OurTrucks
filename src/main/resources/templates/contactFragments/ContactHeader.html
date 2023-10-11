@@ -1,6 +1,6 @@
 <header th:fragment="Header">
   <nav th:fragment="Navigation" class="border-gray-200 z-10 pt-10 pb-10 px-10 md:px-20 bg-gradient-to-b from-white to-black/0 w-[100vw]">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-evenly mx-auto ">
       <a href="https://www.able-log.net" class="flex items-center">
         <img th:src="(@{/img/OurtrucksDark.png})" alt="OurTrucks" class="w-72  md:w-[20rem] filter" />
       </a>
@@ -45,25 +45,17 @@
 
           <li>
             <a
-              th:href="@{/about}" 
-              class="block py-2 pl-3 pr-4 text-[#558216] font-sans font-thin"
-              >About</a>
-          </li>
-
-          <li>
-            <a
               th:href="@{/services}"
               class="block py-2 pl-3 pr-4 text-[#558216] font-sans font-thin"
               >Services</a>
           </li>
-
           <li>
             <a
-              th:href="@{/contact}"
+              th:href="@{/about}" 
               class="block py-2 pl-3 pr-4 text-[#558216] font-sans font-thin"
-              >Contact</a
-            >
+              >About</a>
           </li>
+          
           <li class="flex flex-row gap-4">
             <div>
               <a href="/login" class="bg-gradient-to-br from-[#567626] to-[#36510E] text-[#c8e1a6] font-bold py-2 px-8 rounded-full md:text-[1.2rem] shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] hover:px-10 hover:py-4 transition-all ease-in-out">Sign up</a>

@@ -15,58 +15,73 @@
             In the trucking industry, web solutions like website management and AI assistants are essential for staying competitive and efficient. A well-designed website attracts clients, while AI assistants handle inquiries and streamline operations, leading to cost savings and improved customer satisfaction. Contact us today to enhance your trucking business and stay ahead in the digital age.</p>
             <div class="w-full flex flex-row gap-6 justify-center">
               <div class="text-2xl font-thin">
-                <p>Email Us</p>
+                <a href="#email-us">Email Us</a>
               </div>
               <div class="text-2xl font-thin">
-                <p>Call Us</p>
+                <a>Call Us</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="w-[50%] h-full p-4">
-      <div class="bg-gray-300/10 w-full h-full px-16 py-10">
-        <div class="flex flex-row justify-start">
-          <form action="" class="w-full">
-            <div class="flex flex-col w-full gap-4">
-              <div class="flex flex-row gap-4 items-center w-full">
-                <label for="first_name" class="text-[1.2rem] w-[20%]">First Name</label>
-                <input type="text" name="first_name" class="rounded-md w-[75%]" placeholder="First Name">
-              </div>
-              <div class="flex flex-row gap-4 items-center w-full">
-                <label for="last_name" class="text-[1.2rem] w-[20%]">Last Name</label>
-                <input type="text" name="last_name" class="rounded-md w-[75%]" placeholder="Last Name">
-              </div>
-              <div class="flex flex-row gap-4 items-center w-full">
-                <label for="email" class="text-[1.2rem] w-[20%]">Email</label>
-                <input type="text" name="email" class="rounded-md w-[75%]" placeholder="Email">
-              </div>
+    <div class="w-screen flex flex-col md:flex-row">
+      <section id="email-us" class="w-full md:w-[50%] h-full p-4">
+        <div class="bg-gray-300/10 w-full h-full px-16 py-10">
+          <div class="flex flex-row justify-start">
+            <form action="" class="w-full">
+              <div class="flex flex-col w-full gap-4">
+                <div class="flex flex-row gap-4 items-center w-full">
+                  <label for="first_name" class="text-[1.2rem] w-[20%]">
+                    <img th:src="@{/img/assets/icons/man.svg}" alt="">
+                    
+                  </label>
+                  <input type="text" name="first_name" class="rounded-md w-[75%]" placeholder="First Name">
+                </div>
+                <div class="flex flex-row gap-4 items-center w-full">
+                  <label for="last_name" class="text-[1.2rem] w-[20%]">
+                    <img th:src="@{/img/assets/icons/man.svg}" alt="">
+                  </label>
+                  <input type="text" name="last_name" class="rounded-md w-[75%]" placeholder="Last Name">
+                </div>
+                <div class="flex flex-row gap-4 items-center w-full">
+                  <label for="email" class="text-[1.2rem] w-[20%]">
+                    <img th:src="@{/img/assets/icons/email.svg}" alt="">
+                  </label>
+                  <input type="text" name="email" class="rounded-md w-[75%]" placeholder="Email">
+                </div>
 
-              <div class="flex flex-row gap-4 items-center w-full">
-                <label for="business_affl" class="text-[1.2rem] w-[20%]">Business</label>
-                <input type="text" name="business_affl" class="rounded-md w-[75%]" placeholder="Business Affiliation">
-              </div>
+                <div class="flex flex-row gap-4 items-center w-full">
+                  <label for="business_affl" class="text-[1.2rem] w-[20%]">
+                    <img th:src="@{/img/assets/icons/business.svg}" alt="" class="h-7">
+                  </label>
+                  <input type="text" name="business_affl" class="rounded-md w-[75%]" placeholder="Business Affiliation">
+                </div>
 
-              <div class="flex flex-row gap-4 items-center w-full">
-                <label for="subject" class="text-[1.2rem] w-[20%]">Subject</label>
-                <input type="text" name="subject" class="rounded-md w-[75%]" placeholder="Subject">
-              </div>
+                <div class="flex flex-row gap-4 items-center w-full">
+                  <label for="subject" class="text-[1.2rem] w-[20%]">
+                    <img th:src="@{/img/assets/icons/subject.svg}" alt="">
+                  </label>
+                  <input type="text" name="subject" class="rounded-md w-[75%]" placeholder="Subject">
+                </div>
 
-              <div class="flex flex-row gap-4 items-center w-full">
-                <label for="information" class="text-[1.2rem] w-[20%]">Information</label>
-                <textarea type="text" name="first_name" class="rounded-md w-[75%]" placeholder="Your reason for reaching out!"></textarea>
-              </div> 
-            </div>
-          </form>
-          
+                <div class="flex flex-row gap-4 items-center w-full">
+                  <label for="information" class="text-[1.2rem] w-[20%]">
+                    <img th:src="@{/img/assets/icons/information.svg}" alt="" class="h-7">
+                  </label>
+                  <textarea type="text" name="first_name" class="rounded-md w-[75%]" placeholder="Your reason for reaching out!"></textarea>
+                </div> 
+              </div>
+            </form>
+            
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="w-[50%] h-full p-4 ">
-      <div class="w-full h-full">
-        <img th:src="@{/img/assets/examples/GoogleMapTA.webp}" alt="">
-      </div>
-    </section>
+      </section>
+      <section class="w-full md:w-[50%] h-full overflow-hidden">
+        <div class="w-full h-full max-h-full max-w-full overflow-hidden">
+          <img th:src="@{/img/assets/examples/GoogleMapTA.webp}" alt="" class="min-w-[100rem] min-h-[100rem]">
+        </div>
+      </section>
+    </div>
   </div> 
 </div>
