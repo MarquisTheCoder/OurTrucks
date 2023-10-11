@@ -1,5 +1,6 @@
-<body th:fragment="Body">
-  <header th:replace="(~{contactFragments/ContactHeader :: Header})"></header>
-  <main th:replace="(~{contactFragments/ContactMain :: Main })"></main>
-  <footer th:replace="(~{baseFragments/Footer :: Footer})"></footer>
+<body th:fragment="Body" class="p-0 m-0 w-screen h-screen">
+  <div id="root" class="w-screen h-screen flex flex-col p-0 m-0">
+    <header th:replace="(~{contactFragments/ContactHeader :: Header})"></header>
+    <main th:replace="(~{contactFragments/ContactMain :: Main })"></main>
+  </div>
 </body>

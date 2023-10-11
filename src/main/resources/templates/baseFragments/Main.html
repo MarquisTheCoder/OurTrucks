@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
   <main th:fragment="Main" class="bg-[#eef5e3] text-white p-0 m-0 h-fit w-screen">
-    <section class="h-auto py-6  bg-gradient-to-b from-[#F9F9F9] to-[#F9F9F9] w-screen flex flex-col md:flex-row md:items-center md:justify-center gap-4"> 
-      <div class="w-[28rem] flex flex-col gap-4">
-        <div class="w-[28rem] h-[18rem] max-h-[30rem] max-w-[30rem] overflow-hidden rounded-sm">
-          <img class="min-w-[40rem] h-auto rounded-sm" th:src="@{/img/assets/examples/cutting_edge.jpg}" alt="">
-          
+    <section class="h-auto py-6  bg-gradient-to-b from-[#F9F9F9] to-[#F9F9F9] w-screen flex flex-col items-center md:flex-row md:items-center md:justify-center gap-8"> 
+
+      <div class="w-[24rem] flex flex-col gap-4 pt-10">
+
+        <div class="w-[24rem] min-h-[20rem] h-[20rem] max-h-[30rem] max-w-[30rem] overflow-hidden rounded-sm relative">
+          <img class="min-w-[40rem] h-auto rounded-sm" th:src="@{/img/assets/examples/cutting_edge.jpg}" alt=""> 
         </div>
-        <div class="flex flex-col">
+
+        <div class="flex flex-col h-[15rem] min-h[15rem]">
           <h2 class="text-black text-2xl font-bold text-center">Cutting Edge</h2>
           <p class="text-black font-thin text-center">
             Introducing our cutting-edge automated web solution: a seamless, user-friendly platform designed to streamline processes, boost efficiency, and enhance user experiences. With smart automation, real-time data analytics, and intuitive design, it's the ideal choice for businesses seeking digital transformation.
           </p>
-        </div> 
+        </div>  
       </div>
 
-      <div class="w-[28rem] flex flex-col gap-4">
-        <div class="w-[28rem] h-[18rem] max-h-[30rem] max-w-[30rem] overflow-hidden rounded-sm">
-          <img class="min-w-[40rem] h-auto rounded-sm" th:src="@{/img/assets/examples/prompt_responses.jpg}" alt="">
-          
+      <div class="w-[24rem] flex flex-col gap-4 pt-10">
+        <div class="w-[24rem] min-w-[24rem] min-h-[20rem] h-[20rem] max-h-[30rem] max-w-[30rem] overflow-hidden rounded-sm relative">
+          <img class="min-w-[40rem] h-auto rounded-sm" th:src="@{/img/assets/examples/cutting_edge_busines_woman.jpg}" alt=""> 
         </div>
-        <div class="flex flex-col">
+
+        <div class="flex flex-col h-[15rem] min-h[15rem]">
           <h2 class="text-black text-2xl font-bold text-center">Prompt Solutions</h2>
           <p class="text-black font-thin text-center">
             Our methodology is tailored for expeditious problem-solving. It commences with an initial plan and engages in ongoing collaboration with our adept team, facilitating iterative refinements that culminate in a meticulously tailored solution, all while ensuring minimal customer disruption.
@@ -28,15 +30,15 @@
         </div> 
       </div>
 
-     <div class="w-[28rem] flex flex-col gap-4">
-        <div class="w-[28rem] h-[18rem] max-h-[30rem] max-w-[30rem] overflow-hidden rounded-sm relative">
-          <img class="min-w-[25rem] h-auto rounded-sm absolute top-[1rem] left-0" th:src="@{/img/assets/examples/security_centric.jpg}" alt="">;
+     <div class="w-[24rem] flex flex-col gap-4 pt-10">
+        <div class="w-[24rem] min-w-[24rem] min-h-[20rem] h-[20rem] max-h-[30rem] max-w-[30rem] overflow-hidden rounded-sm relative">
+          <img class="min-w-[40rem] h-auto rounded-sm" th:src="@{/img/assets/examples/security_centric.jpg}" alt="">;
           
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col h-[15rem] min-h[15rem]">
           <h2 class="text-black text-2xl font-bold text-center">Security Centric</h2>
           <p class="text-black font-thin text-center">
-            Our core ethos is deeply rooted in a security-centric approach. We prioritize the protection of your sensitive information through comprehensive measures, including advanced encryption, continuous surveillance, and stringent authentication protocols. Rest assured, your data's security is our top priority in every aspect of our service.
+            Our core ethos is deeply rooted in a security-centric approach. We prioritize the protection of your sensitive information through comprehensive measures, including advanced encryption, continuous surveillance, and stringent authentication protocols. 
           </p>
         </div> 
       </div>

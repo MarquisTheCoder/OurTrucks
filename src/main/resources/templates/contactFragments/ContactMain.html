@@ -1,33 +1,72 @@
-<div th:fragment="Main">
-  <div class="w-full flex flex-row justify-center mb-10">
-    <h1 class="text-4xl font-bold">Contact Us</h1>
-  </div>
-  <div class="mt-10 w-full flex flex-row justify-center">
-    <form
-      action="https://getform.io/f/5931279e-8133-4dbf-a323-d86d2feaf8dd"
-      method="POST"
-      enctype="multipart/form-data"
-    >
-      <div class="flex flex-col w-64 gap-10 white">
-        <label for="name" class="text-center font-bold">Name</label>
-        <input type="text" name="name" class="grow-0 text-black" />
+<div th:fragment="Main" class="h-screen w-screen text-black">
 
-        <label for="email" class="text-center mt-4 font-bold">Email</label>
-        <input type="email" name="email" class="text-black" />
+ 
 
-        <label for="message" class="text-center mt-4 font-bold">Message</label>
-        <input type="text" name="message" class="text-black" />
+  <div></div>
+  <div class="h-full w-full flex flex-col overflow-y-scroll">
+    <section class="min-h-[40rem] h-[40rem] overflow-hidden relative">
+      <img class="absolute top-0 left-0 -z-10" th:src="@{/img/assets/examples/woman_smiling.jpeg}" alt="">
 
-        <label for="phone" class="text-center mt-4 font-bold">Phone Number</label>
-        <input type="tel" name="phone" class="text-black" />
-
-        <input type="hidden" name="_gotcha" style="display: none !important" />
-
-        <label for="files[]" class="text-center mt-4 font-bold">Document</label>
-        <input type="file" name="files[]" multiple />
-
-        <button class="mt-4 px-5 py-2 bg-blue-700 text-white" type="submit">Send</button>
+      <div id="quotation-box" class="w-full h-full flex flex-row justify-start">
+        <div class="h-full w-[50%] p-20">
+          <div class="bg-white/95 rounded-md h-full w-full flex flex-col py-12 px-6 gap-6">
+           <h2 class="text-3xl font-sans font-bold text-center">The Solutions you Need</h2> 
+           <p class="font-thin text-2xl text-[#000000] text-center">
+            In the trucking industry, web solutions like website management and AI assistants are essential for staying competitive and efficient. A well-designed website attracts clients, while AI assistants handle inquiries and streamline operations, leading to cost savings and improved customer satisfaction. Contact us today to enhance your trucking business and stay ahead in the digital age.</p>
+            <div class="w-full flex flex-row gap-6 justify-center">
+              <div class="text-2xl font-thin">
+                <p>Email Us</p>
+              </div>
+              <div class="text-2xl font-thin">
+                <p>Call Us</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </form>
-  </div>
+    </section>
+    <section class="w-[50%] h-full p-4">
+      <div class="bg-gray-300/10 w-full h-full px-16 py-10">
+        <div class="flex flex-row justify-start">
+          <form action="" class="w-full">
+            <div class="flex flex-col w-full gap-4">
+              <div class="flex flex-row gap-4 items-center w-full">
+                <label for="first_name" class="text-[1.2rem] w-[20%]">First Name</label>
+                <input type="text" name="first_name" class="rounded-md w-[75%]" placeholder="First Name">
+              </div>
+              <div class="flex flex-row gap-4 items-center w-full">
+                <label for="last_name" class="text-[1.2rem] w-[20%]">Last Name</label>
+                <input type="text" name="last_name" class="rounded-md w-[75%]" placeholder="Last Name">
+              </div>
+              <div class="flex flex-row gap-4 items-center w-full">
+                <label for="email" class="text-[1.2rem] w-[20%]">Email</label>
+                <input type="text" name="email" class="rounded-md w-[75%]" placeholder="Email">
+              </div>
+
+              <div class="flex flex-row gap-4 items-center w-full">
+                <label for="business_affl" class="text-[1.2rem] w-[20%]">Business</label>
+                <input type="text" name="business_affl" class="rounded-md w-[75%]" placeholder="Business Affiliation">
+              </div>
+
+              <div class="flex flex-row gap-4 items-center w-full">
+                <label for="subject" class="text-[1.2rem] w-[20%]">Subject</label>
+                <input type="text" name="subject" class="rounded-md w-[75%]" placeholder="Subject">
+              </div>
+
+              <div class="flex flex-row gap-4 items-center w-full">
+                <label for="information" class="text-[1.2rem] w-[20%]">Information</label>
+                <textarea type="text" name="first_name" class="rounded-md w-[75%]" placeholder="Your reason for reaching out!"></textarea>
+              </div> 
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </section>
+    <section class="w-[50%] h-full p-4 ">
+      <div class="w-full h-full">
+        <img th:src="@{/img/assets/examples/GoogleMapTA.webp}" alt="">
+      </div>
+    </section>
+  </div> 
 </div>
