@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
+<!--Start of Tawk.to Script-->
+
+  <!--End of Tawk.to Script-->
   <main th:fragment="Main" class="bg-[#eef5e3] text-white p-0 m-0 h-fit w-screen">
-    <section class="h-auto py-6  bg-gradient-to-b from-[#F9F9F9] to-[#F9F9F9] w-screen flex flex-col items-center md:flex-row md:items-center md:justify-center gap-8"> 
+    <section class="h-auto py-6  bg-gradient-to-b from-[#f8faf4] to-[#eef3ee] w-screen flex flex-col items-center md:flex-row md:items-center md:justify-center gap-14"> 
 
-      <div class="w-[24rem] flex flex-col gap-4 pt-10">
-
+      <div class="w-[24rem] flex flex-col gap-6 pt-10">
         <div class="w-[24rem] min-h-[20rem] h-[20rem] max-h-[30rem] max-w-[30rem] overflow-hidden rounded-sm relative">
           <img class="min-w-[40rem] h-auto rounded-sm" th:src="@{/img/assets/examples/cutting_edge.jpg}" alt=""> 
         </div>
 
-        <div class="flex flex-col h-[15rem] min-h[15rem]">
+        <div class="flex flex-col h-[15rem] min-h[15rem] gap-2">
           <h2 class="text-black text-2xl font-bold text-center">Cutting Edge</h2>
           <p class="text-black font-thin text-center">
             Introducing our cutting-edge automated web solution: a seamless, user-friendly platform designed to streamline processes, boost efficiency, and enhance user experiences. With smart automation, real-time data analytics, and intuitive design, it's the ideal choice for businesses seeking digital transformation.
@@ -17,12 +20,12 @@
         </div>  
       </div>
 
-      <div class="w-[24rem] flex flex-col gap-4 pt-10">
+      <div class="w-[24rem] flex flex-col gap-6 pt-10">
         <div class="w-[24rem] min-w-[24rem] min-h-[20rem] h-[20rem] max-h-[30rem] max-w-[30rem] overflow-hidden rounded-sm relative">
           <img class="min-w-[40rem] h-auto rounded-sm" th:src="@{/img/assets/examples/cutting_edge_busines_woman.jpg}" alt=""> 
         </div>
 
-        <div class="flex flex-col h-[15rem] min-h[15rem]">
+        <div class="flex flex-col h-[15rem] min-h[15rem] gap-2">
           <h2 class="text-black text-2xl font-bold text-center">Prompt Solutions</h2>
           <p class="text-black font-thin text-center">
             Our methodology is tailored for expeditious problem-solving. It commences with an initial plan and engages in ongoing collaboration with our adept team, facilitating iterative refinements that culminate in a meticulously tailored solution, all while ensuring minimal customer disruption.
@@ -30,12 +33,11 @@
         </div> 
       </div>
 
-     <div class="w-[24rem] flex flex-col gap-4 pt-10">
+     <div class="w-[24rem] flex flex-col gap-6 pt-10">
         <div class="w-[24rem] min-w-[24rem] min-h-[20rem] h-[20rem] max-h-[30rem] max-w-[30rem] overflow-hidden rounded-sm relative">
-          <img class="min-w-[40rem] h-auto rounded-sm" th:src="@{/img/assets/examples/security_centric.jpg}" alt="">;
-          
+          <img class="min-w-[40rem] h-auto rounded-sm" th:src="@{/img/assets/examples/security_centric.jpg}" alt="">
         </div>
-        <div class="flex flex-col h-[15rem] min-h[15rem]">
+        <div class="flex flex-col h-[15rem] min-h[15rem] gap-2">
           <h2 class="text-black text-2xl font-bold text-center">Security Centric</h2>
           <p class="text-black font-thin text-center">
             Our core ethos is deeply rooted in a security-centric approach. We prioritize the protection of your sensitive information through comprehensive measures, including advanced encryption, continuous surveillance, and stringent authentication protocols. 
@@ -44,10 +46,36 @@
       </div>
     </section>
     <section class="bg-gradient-to-r  from-[#25333E] via-[#35393C] to-[#35393C] w-screen  flex flex-row justify-center">
-      <h3 class="font-thin text-[1.3rem] py-8">Our Development Process</h3>
+      <h3 class="font-thin text-[1.6rem] py-8">Our Development Process</h3>
+    </section>
+    <section class="h-screen overflow-hidden relative flex flex-row px-7 md:px-28 py-14">
+
+     <img id="background" class="h-screen w-[200vw] md:h-auto md:w-screen absolute top-0 left-0 z-0" th:src="@{/img/assets/typing.webp}" alt="">
+
+
+     <div class="z-10 flex flex-col items-center">
+      <img class=" w-20 h-20 flex-grow-0 flex-shrink-0" src="/img/assets/icons/provide/design.png" alt="">  
+      <h4 class="w-20 text-white font-sans text-2xl font-bold">Planning</h4>
+      <p class="text-white font-thin w-44 text-center text-[0.9rem]">
+        The questionnaire
+        scoping the work
+        stakeholder interviews
+      </p> 
+     </div> 
+     <div class="z-10 flex flex-col items-center">
+      <img class=" w-20 h-20 flex-grow-0 flex-shrink-0" src="/img/assets/icons/provide/design.png" alt="">  
+      <h4 class="w-20 text-white font-sans text-2xl font-bold">Planning</h4>
+      <p class="text-white font-thin w-44 text-center text-[0.9rem]">
+        The questionnaire
+        scoping the work
+        stakeholder interviews
+      </p> 
+     </div> 
+     
     </section>
     <section > 
       <img src="/img/Website_design_process.jpg" alt=""> 
+       
     </section>
   </main>
 </html>
