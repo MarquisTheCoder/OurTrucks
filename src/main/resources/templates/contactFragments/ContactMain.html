@@ -2,23 +2,21 @@
 
  
 
-  <div></div>
   <div class="h-full w-full flex flex-col overflow-y-scroll">
     <section class="min-h-[40rem] h-[40rem] overflow-hidden relative">
       <img class="absolute top-0  left-10 md:left-36 -z-10" th:src="@{/img/assets/examples/woman_smiling.jpeg}" alt="">
-
       <div id="quotation-box" class="w-full h-full flex flex-row justify-start">
         <div class="h-full w- md:w-[50%]">
           <div class="bg-[#F8F8F8] rounded-md h-full w-full flex flex-col py-12 px-6 gap-6 justify-center">
            <h2 class="text-2xl md:text-3xl font-sans font-bold text-center">The Solutions you Need</h2> 
            <p class="font-thin text-[1.2rem] md:text-2xl text-[#000000] text-center">
             In the trucking industry, web solutions like website management and AI assistants are essential for staying competitive and efficient. A well-designed website attracts clients, while AI assistants handle inquiries and streamline operations, leading to cost savings and improved customer satisfaction. Contact us today to enhance your trucking business and stay ahead in the digital age.</p>
-            <div class="w-full flex flex-row gap-6 justify-center">
+            <div class="w-full flex flex-row gap-8 justify-center">
               <div class="text-2xl font-thin">
-                <a href="#email-us">Email Us</a>
+                <a class="rounded-md text-white/90 px-4 py-2 bg-gradient-to-br from-[#547122] to-[#3A5610] font-sans font-bold" href="#email-us">Email Us</a> 
               </div>
               <div class="text-2xl font-thin">
-                <a>Call Us</a>
+                <a class="rounded-md text-white/90 px-4 py-2 bg-gradient-to-br from-[#547122] to-[#3A5610] font-sans font-bold">Call Us</a>
               </div>
             </div>
           </div>
@@ -65,19 +63,23 @@
                   <input type="text" name="subject" class="rounded-md w-[75%]" placeholder="Subject">
                 </div>
 
-                <div class="flex flex-row gap-4 items-center w-full">
+                <div class="flex flex-row gap-4 items-center w-full"  >
                   <label for="information" class="text-[1.2rem] w-[20%]">
                     <img th:src="@{/img/assets/icons/information.svg}" alt="" class="h-7">
                   </label>
                   <textarea type="text" name="first_name" class="rounded-md w-[75%]" placeholder="Your reason for reaching out!"></textarea>
                 </div> 
               </div>
+              <div class="w-full flex flex-row justify-center pl-20 my-8">
+                <button class="rounded-md text-white/90 px-4 py-2 bg-gradient-to-br from-[#547122] to-[#3A5610] font-sans font-bold">Send email</button>
+              </div>
+              
             </form>
             
           </div>
         </div>
       </section>
-      <section class="w-full md:w-[50%] h-full overflow-hidden">
+      <section class="w-full md:w-[50%] h-[30rem] overflow-hidden">
         <div class="w-full h-full max-h-full max-w-full overflow-hidden">
           <img th:src="@{/img/assets/examples/GoogleMapTA.webp}" alt="" class="min-w-[100rem] min-h-[100rem]">
         </div>
